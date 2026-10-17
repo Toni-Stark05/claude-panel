@@ -107,6 +107,45 @@ gsettings set org.gnome.shell.extensions.claude-panel terminal-directory '~'
 
 Другие настройки и устройство — в `README.md`.
 
+## 5а. Расширения GNOME Shell автора
+
+Кроме Claude Panel у автора включены (GNOME 47):
+
+| Расширение | UUID | Откуда | Зачем |
+|---|---|---|---|
+| AI Limits 1.1.0 | `ai-limits@igor.lysenko` | https://github.com/ilysenko/ai-limits-gnome | лимиты Claude/Codex в верхней панели |
+| Clipboard Indicator v71 | `clipboard-indicator@tudmotu.com` | https://extensions.gnome.org/extension/779/ | история буфера обмена |
+| AppIndicator and KStatusNotifierItem Support v66 | `appindicatorsupport@rgcjonas.gmail.com` | https://extensions.gnome.org/extension/615/ | иконки приложений в трее |
+| GSConnect v73 | `gsconnect@andyholmes.github.io` | https://extensions.gnome.org/extension/1319/ | связь с телефоном (KDE Connect) |
+| Background Logo | `background-logo@fedorahosted.org` | идёт с Fedora | системное, ставить не нужно |
+
+Установка через консоль (`gnome-extensions-cli` ставит из extensions.gnome.org под текущую версию Shell):
+
+```bash
+pipx install gnome-extensions-cli      # или: pip install --user gnome-extensions-cli
+gext install clipboard-indicator@tudmotu.com appindicatorsupport@rgcjonas.gmail.com gsconnect@andyholmes.github.io
+```
+
+Либо вручную через сайт extensions.gnome.org (нужен браузерный коннектор) или приложение «Extension Manager» (`flatpak install flathub com.mattjakeman.ExtensionManager`).
+
+AI Limits на extensions.gnome.org нет, ставится из GitHub:
+
+```bash
+git clone https://github.com/ilysenko/ai-limits-gnome /tmp/ai-limits && cd /tmp/ai-limits
+# в репозитории есть свой способ установки (см. его README); если его нет — скопировать папку расширения:
+cp -r . ~/.local/share/gnome-shell/extensions/ai-limits@igor.lysenko
+glib-compile-schemas ~/.local/share/gnome-shell/extensions/ai-limits@igor.lysenko/schemas
+```
+
+Настройки AI Limits у автора (Codex скрыт, Claude Panel показывается в обоих окнах):
+
+```bash
+gsettings set org.gnome.shell.extensions.ai-limits show-codex false
+gsettings set org.gnome.shell.extensions.ai-limits claude-panel-window 'both'
+```
+
+После установки всех расширений — перелогиниться и включить: `gnome-extensions enable <uuid>`.
+
 ## 6. Проверка
 
 ```bash
