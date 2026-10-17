@@ -1,0 +1,6 @@
+# Конфиг для claude-panel (bash-синтаксис). Положите его в ~/.config/ask-claude/config и сделайте chmod 600.
+# Панель запускает Claude Code ТОЛЬКО через HTTP/HTTPS-прокси (fail closed): без прокси — не стартует.
+PROXY_URL='http://USER:PASSWORD@HOST:PORT'
+NO_PROXY='localhost,127.0.0.1,::1'
+# URL для проверки доступности прокси перед запуском.
+PROXY_CHECK_URL='https://api.anthropic.com/'

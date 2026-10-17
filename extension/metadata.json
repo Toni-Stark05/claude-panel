@@ -1,0 +1,9 @@
+{
+  "uuid": "claude-panel@tonistark",
+  "name": "Claude Panel",
+  "description": "Быстрый чат с Claude Code из верхней панели: свои сессии, подтверждение действий, весь трафик через прокси из ~/.config/ask-claude/config.",
+  "version": 1,
+  "shell-version": ["47"],
+  "settings-schema": "org.gnome.shell.extensions.claude-panel",
+  "session-modes": ["user", "unlock-dialog"]
+}

@@ -1,0 +1,79 @@
+.claude-panel-icon { font-size: 16px; font-weight: bold; color: #d97757; }
+.claude-panel-busy-dot { width: 6px; height: 6px; border-radius: 3px; background-color: #d97757; margin-top: 4px; }
+
+.claude-panel-root { width: 460px; spacing: 8px; padding: 4px 6px; }
+
+.claude-panel-header { spacing: 6px; padding-bottom: 4px; border-bottom: 1px solid rgba(128,128,128,0.25); }
+.claude-panel-title { font-weight: bold; padding: 0 4px; }
+.claude-panel-model {
+  padding: 4px 10px; border-radius: 99px; font-size: 0.9em;
+  background-color: rgba(217,119,87,0.18); color: #d97757;
+}
+.claude-panel-model:hover { background-color: rgba(217,119,87,0.30); }
+.claude-panel-icon-button { padding: 6px; border-radius: 99px; }
+.claude-panel-icon-button:hover, .claude-panel-icon-button:focus { background-color: rgba(128,128,128,0.2); }
+
+.claude-panel-scroll { height: 480px; }
+.claude-panel-messages, .claude-panel-session-list { spacing: 8px; padding: 2px 4px; }
+.claude-panel-empty { color: rgba(128,128,128,0.9); padding: 24px 12px; text-align: center; }
+
+.claude-panel-msg { border-radius: 12px; padding: 8px 12px; }
+.claude-panel-msg.user { background-color: rgba(217,119,87,0.22); margin-left: 48px; }
+.claude-panel-msg.assistant { background-color: rgba(128,128,128,0.12); spacing: 2px; }
+.claude-panel-msg.tool { font-family: monospace; font-size: 0.85em; color: rgba(128,128,128,1); padding: 2px 12px; }
+.claude-panel-msg.error { background-color: rgba(224,27,36,0.15); color: #e66; }
+.claude-panel-msg.info { color: rgba(128,128,128,1); font-size: 0.9em; padding: 2px 12px; }
+.claude-panel-copy { padding: 3px; }
+
+.claude-panel-msg.perm { background-color: rgba(229,165,10,0.14); border: 1px solid rgba(229,165,10,0.5); spacing: 4px; }
+.claude-panel-perm-title { font-weight: bold; }
+.claude-panel-perm-desc { font-size: 0.9em; }
+.claude-panel-perm-cmd { font-family: monospace; font-size: 0.9em; background-color: rgba(0,0,0,0.25); border-radius: 6px; padding: 6px 8px; }
+.claude-panel-perm-buttons { spacing: 6px; padding-top: 4px; }
+.claude-panel-perm-button { padding: 5px 12px; border-radius: 8px; background-color: rgba(128,128,128,0.2); }
+.claude-panel-perm-button:hover, .claude-panel-perm-button:focus { background-color: rgba(128,128,128,0.35); }
+.claude-panel-perm-button.allow { background-color: rgba(46,194,126,0.35); }
+.claude-panel-perm-button.allow:hover { background-color: rgba(46,194,126,0.5); }
+.claude-panel-perm-button.deny { background-color: rgba(224,27,36,0.3); }
+.claude-panel-perm-button.deny:hover { background-color: rgba(224,27,36,0.45); }
+.claude-panel-perm-status { font-size: 0.9em; font-weight: bold; }
+.claude-panel-perm-status.allowed, .claude-panel-perm-status.always { color: #2ec27e; }
+.claude-panel-perm-status.denied { color: #e66; }
+.claude-panel-perm-status.cancelled { color: rgba(128,128,128,1); }
+
+.claude-panel-session-row { spacing: 4px; }
+.claude-panel-session-button { padding: 8px 10px; border-radius: 10px; }
+.claude-panel-session-button:hover, .claude-panel-session-button:focus { background-color: rgba(128,128,128,0.18); }
+.claude-panel-session-button.current { background-color: rgba(217,119,87,0.16); }
+.claude-panel-session-title { font-weight: bold; }
+.claude-panel-session-meta { font-size: 0.85em; color: rgba(128,128,128,1); }
+
+.claude-panel-input-row { spacing: 6px; padding-top: 4px; border-top: 1px solid rgba(128,128,128,0.25); }
+.claude-panel-entry { min-height: 36px; }
+.claude-panel-terminal { opacity: 0.6; }
+.claude-panel-terminal:hover, .claude-panel-terminal:focus { opacity: 1; }
+.claude-panel-assistant-content { spacing: 6px; }
+.claude-panel-code { background-color: rgba(0,0,0,0.28); border-radius: 8px; padding: 6px 4px 6px 10px; spacing: 4px; }
+.claude-panel-code-text { font-family: monospace; font-size: 0.9em; }
+.claude-panel-mic.recording { background-color: rgba(224,27,36,0.55); color: #fff; }
+.claude-panel-mode { padding: 4px 10px; border-radius: 99px; font-size: 0.9em; background-color: rgba(128,128,128,0.2); }
+.claude-panel-mode:hover { background-color: rgba(128,128,128,0.32); }
+.claude-panel-mode.auto { background-color: rgba(46,194,126,0.25); color: #2ec27e; }
+
+/* markdown */
+.claude-panel-h { font-weight: bold; padding-top: 4px; }
+.claude-panel-h1 { font-size: 1.25em; }
+.claude-panel-h2 { font-size: 1.15em; }
+.claude-panel-h3 { font-size: 1.05em; }
+.claude-panel-list { spacing: 2px; }
+.claude-panel-li { spacing: 6px; }
+.claude-panel-li-marker { min-width: 14px; color: rgba(217,119,87,0.9); }
+.claude-panel-quote { border-left: 3px solid rgba(217,119,87,0.6); padding: 2px 10px; color: rgba(200,200,200,0.9); }
+.claude-panel-hr { height: 1px; background-color: rgba(128,128,128,0.35); margin: 4px 0; }
+.claude-panel-table { border: 1px solid rgba(128,128,128,0.35); border-radius: 6px; font-size: 0.92em; margin: 2px 0; }
+.claude-panel-tr { spacing: 0; }
+.claude-panel-th, .claude-panel-td { padding: 4px 7px; }
+.claude-panel-th { font-weight: bold; background-color: rgba(128,128,128,0.18); border-bottom: 1px solid rgba(128,128,128,0.35); }
+.claude-panel-td { border-bottom: 1px solid rgba(128,128,128,0.18); }
+.claude-panel-td.odd { background-color: rgba(128,128,128,0.06); }
+.claude-panel-td.last { border-bottom: 0px; }
